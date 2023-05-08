@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="estate_property_product_views_form" model="ir.ui.view">
+        <field name="name">estate.property.product.views.form</field>
+        <field name="model">estate.property</field>
+        <field name="inherit_id" ref="estate.estate_property_views_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[3]" position="after">
+                <page string="Ordine di vendita">
+                    <group>
+                        <tree>
+                            <field name="property_line_ids"/>
+                        </tree>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
